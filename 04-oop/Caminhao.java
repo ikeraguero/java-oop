@@ -21,12 +21,12 @@ public class Caminhao extends Veiculo{
         return CapacidadeTotal;
     }
     
-    public void setCapacidadeTotal(int value) {
-        this.CapacidadeTotal = value;
-    }
-    
     public int getCapacidadeAtual() {
         return CapacidadeAtual;
+    }
+    
+    public void setCapacidadeTotal(int value) {
+        this.CapacidadeTotal = value;
     }
     
     public void setCapacidadeAtual(int value){

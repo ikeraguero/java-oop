@@ -17,11 +17,27 @@ public class Carro extends Veiculo{
         this.automatico = automatico;
     }
     
-    public void getAutomatico() {
-        System.out.println(automatico);
+    public boolean getAutomatico() {
+        return automatico;
+    }
+    
+    public Radio getFrquencia() {
+        return frequencia;
+    }
+    
+    public Radio getAmplitude() {
+        return amplitude;
     }
     
     public void setAutomatico(boolean value) {
         this.automatico = value;
+    }
+    
+    public void setFrequencia(Radio object) {
+        this.frequencia = object;
+    }
+    
+    public void setAmplitude(Radio object) {
+        this.amplitude = object;
     }
 }

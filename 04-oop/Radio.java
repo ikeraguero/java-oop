@@ -1,7 +1,7 @@
 public class Radio{
-    String estacao;
-    int canal;
-    int volume;
+    private String estacao;
+    private int canal;
+    private int volume;
     
     public Radio(String estacao) {
         switch(estacao) {

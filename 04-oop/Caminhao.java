@@ -1,14 +1,14 @@
 public class Caminhao extends Veiculo{
-    int CapacidadeTotal;
-    int CapacidadeAtual;
+    private int CapacidadeTotal;
+    private int CapacidadeAtual;
     
     public void PagarPedagio() {
-        if(this.SemParar < 40) {
+        if(this.getSemParar() < 40) {
             System.out.printf("Carro sem dinheiro suficiente!\n");
             return;
         }
-        this.SemParar -= 40;
-        System.out.printf("Dinheiro: %.1f\n", this.SemParar);
+        this.setSemParar(this.getSemParar()-40);
+        System.out.printf("Dinheiro: %.1f\n", this.getSemParar());
     }
     
     public Caminhao(int ano, int chassi, float preco, float SemParar, int CapacidadeTotal) {

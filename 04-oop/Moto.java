@@ -1,13 +1,13 @@
 public class Moto extends Veiculo{
-    int cilindradas;
+    private int cilindradas;
     
     public void PagarPedagio() {
-        if(this.SemParar < 10) {
+        if(this.getSemParar() < 10) {
             System.out.printf("Carro sem dinheiro suficiente!\n");
             return;
         }
-        this.SemParar -= 10;
-        System.out.printf("Dinheiro: %.1f\n", this.SemParar);
+        this.setSemParar(this.getSemParar()-10);
+        System.out.printf("Dinheiro: %.1f\n", this.getSemParar());
     }
     
     public Moto(int ano, int chassi, float preco, float SemParar, int cilindradas) {

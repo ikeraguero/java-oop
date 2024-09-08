@@ -1,15 +1,15 @@
 public class Carro extends Veiculo{
     Radio frequencia = new Radio("FM");
     Radio amplitude = new Radio("AM");
-    boolean automatico;
+    private boolean automatico;
     
     public void PagarPedagio() {
-        if(this.SemParar < 20) {
+        if(this.getSemParar() < 20) {
             System.out.printf("Carro sem dinheiro suficiente!\n");
             return;
         }
-        this.SemParar -= 20;
-        System.out.printf("Dinheiro: %.1f\n", this.SemParar);
+        this.setSemParar(this.getSemParar()-20);
+        System.out.printf("Dinheiro: %.1f\n", this.getSemParar());
     }
     
     public Carro(int ano, int chassi, float preco, float SemParar, boolean automatico) {

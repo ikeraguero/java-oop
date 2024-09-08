@@ -1,9 +1,9 @@
 public class Veiculo{
-    int ano;
-    int chassi;
-    float preco;
-    float quilometragem;
-    float SemParar;
+    private int ano;
+    private int chassi;
+    private float preco;
+    private float quilometragem;
+    private float SemParar;
     
     public void PagarPedagio(){
         //Este método será sobrescrito nas subclasses
@@ -44,7 +44,7 @@ public class Veiculo{
         this.preco = value;
     }
     
-    public void getSemParar(float value) {
+    public void setSemParar(float value) {
         this.SemParar = value;
     }
     
